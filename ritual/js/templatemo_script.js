@@ -77,12 +77,12 @@ ymaps.ready(init);
 
 function init () {
     var myMap = new ymaps.Map("map", {
-            center: [44.478180, 34.143370],
+            center: [44.498556, 34.169389],
             zoom: 17,
             controls: ['zoomControl', 'typeSelector',  'fullscreenControl', 'routeButtonControl'],
             behaviors: ['drag']
         });
-        myPlacemark = new ymaps.Placemark([44.478180, 34.143370], {
+        myPlacemark = new ymaps.Placemark([44.498556, 34.169389], {
             // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
             balloonContentHeader: "Балун метки",
             balloonContentBody: "Содержимое <em>балуна</em> метки",
@@ -91,7 +91,7 @@ function init () {
         });
 
             // Открываем балун на карте (без привязки к геообъекту).
-    myMap.balloon.open([44.478480, 34.143370], "Ялтинская похоронная компания", {
+    myMap.balloon.open([44.498556, 34.169389], "Ялтинская похоронная компания", {
         // Опция: не показываем кнопку закрытия.
         closeButton: true
     });
